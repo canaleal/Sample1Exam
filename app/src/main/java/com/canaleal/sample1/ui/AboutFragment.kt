@@ -1,4 +1,4 @@
-package com.canaleal.sample1
+package com.canaleal.sample1.ui
 
 import android.app.Dialog
 import android.os.Bundle

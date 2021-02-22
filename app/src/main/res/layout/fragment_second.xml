@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".SecondFragment">
+    tools:context=".ui.SecondFragment">
 
     <TextView
         android:id="@+id/output_fragment_label"
@@ -27,7 +27,7 @@
 
 
     <TextView
-        android:id="@+id/message_player"
+        android:id="@+id/message_petName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/gap1"
@@ -37,7 +37,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/message_bot"
+        android:id="@+id/message_petType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/gap1"

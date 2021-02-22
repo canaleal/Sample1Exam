@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".FirstFragment">
+    tools:context=".ui.FirstFragment">
 
     <TextView
         android:id="@+id/input_fragment_label"
@@ -77,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/gap2"
-        android:text="@string/play" />
+        android:text="@string/add" />
 
     <Space
         android:layout_width="match_parent"

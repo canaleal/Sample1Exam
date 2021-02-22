@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.canaleal.sample1.FirstFragment"
+        android:name="com.canaleal.sample1.ui.FirstFragment"
         android:label="@string/input_fragment"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.canaleal.sample1.SecondFragment"
+        android:name="com.canaleal.sample1.ui.SecondFragment"
         android:label="@string/output_fragment_label"
         tools:layout="@layout/fragment_second">
 
@@ -38,6 +38,6 @@
         app:destination="@id/aboutFragment" />
     <dialog
         android:id="@+id/aboutFragment"
-        android:name="com.canaleal.sample1.AboutFragment"
+        android:name="com.canaleal.sample1.ui.AboutFragment"
         android:label="AboutFragment" />
 </navigation>
