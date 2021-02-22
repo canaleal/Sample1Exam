@@ -42,7 +42,7 @@ class FirstFragment : Fragment() {
         val name = binding.petNameInput.text.toString()
 
         if(name == ""){
-            val text = "Name cannot be empy!"
+            val text = "Name cannot be empty!"
             val duration = Toast.LENGTH_SHORT
 
             val toast = Toast.makeText(context, text, duration)
