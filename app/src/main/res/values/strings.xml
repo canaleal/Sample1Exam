@@ -14,6 +14,7 @@
     <string name="dog">Dog</string>
     <string name="cat">Cat</string>
     <string name="enter_pet_name">Enter pet name</string>
+    <string name="enter_owner_name">Enter owner name</string>
 
     <!-- input / output labels -->
     <string name="select_message">Add your Pet</string>
@@ -24,6 +25,7 @@
     <string name="reset">Reset</string>
     <string name="add">Add</string>
     <string name="play_again">Play Again</string>
+    <string name="isvaccinated">IsVaccinated</string>
 
 
 </resources>

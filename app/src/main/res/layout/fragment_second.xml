@@ -37,7 +37,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/message_petType"
+        android:id="@+id/message_ownerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/gap1"
@@ -47,14 +47,17 @@
         android:textSize="18sp" />
 
 
-
-    <Button
-        android:id="@+id/back_button"
-        style="@style/Widget.AppCompat.Button.Colored"
+    <TextView
+        android:id="@+id/message_isVaccinated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/gap2"
-        android:text="@string/play_again" />
+        android:layout_marginTop="@dimen/gap1"
+        android:text="@string/undefined"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+
 
     <Space
         android:layout_width="match_parent"

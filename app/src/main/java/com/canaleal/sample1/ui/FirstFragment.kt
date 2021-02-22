@@ -40,8 +40,9 @@ class FirstFragment : Fragment() {
 
 
         val name = binding.petNameInput.text.toString()
+        val owner = binding.petOwnerInput.text.toString()
 
-        if(name == ""){
+        if(name == "" || owner=="" ){
             val text = "Name cannot be empty!"
             val duration = Toast.LENGTH_SHORT
 
@@ -50,16 +51,10 @@ class FirstFragment : Fragment() {
         }
         else{
 
-            //Get the selected pet text
-            val petType = when (binding.messageGroup.checkedRadioButtonId) {
-                R.id.cat_button -> getString(R.string.cat)
-                R.id.dog_button -> getString(R.string.dog)
-                else -> getString(R.string.undefined)
-            }
-
+            val vaccinated = binding.checkBox.isChecked
             val action =
                 FirstFragmentDirections.actionFirstFragmentToSecondFragment(
-                    Pet(name, petType)
+                    Pet(name, owner, vaccinated)
                 )
             navController.navigate(action)
         }

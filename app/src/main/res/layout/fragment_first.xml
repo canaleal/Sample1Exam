@@ -41,35 +41,35 @@
         android:layout_marginTop="16dp"
         android:ems="12"
         android:inputType="textPersonName"
+        android:autofillHints="Pet Name" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:labelFor="@id/pet_owner_input"
+        android:text="@string/enter_owner_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/pet_owner_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:ems="12"
+        android:inputType="textPersonName"
         android:autofillHints="Your Name" />
 
 
-    <RadioGroup
-        android:id="@+id/message_group"
+    <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/gap1"
-        android:checkedButton="@id/cat_button">
-
-        <RadioButton
-            android:id="@+id/cat_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/cat"
-            android:textSize="14sp" />
-
-        <RadioButton
-            android:id="@+id/dog_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/dog"
-            android:textSize="14sp" />
+        android:text="@string/isvaccinated" />
 
 
-
-    </RadioGroup>
 
     <Button
         android:id="@+id/send_button"

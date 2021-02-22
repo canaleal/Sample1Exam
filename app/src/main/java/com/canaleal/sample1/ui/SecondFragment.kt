@@ -65,11 +65,13 @@ class SecondFragment : Fragment() {
     private fun showPick(){
 
         val name = pet.petName
-        val type = pet.petType
+        val owner = pet.ownerName
+        val isVaccinated = pet.isVaccinated
 
         //Set the messages
         binding.messagePetName.text = "Name: $name"
-        binding.messagePetType.text = "Pet Type: $type"
+        binding.messageOwnerName.text = "Owner: $owner"
+        binding.messageIsVaccinated.text = "Vaccinated: $isVaccinated"
 
     }
 
