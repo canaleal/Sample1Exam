@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.canaleal.sample1.ui.FirstFragmentDirections
@@ -36,19 +37,31 @@ class FirstFragment : Fragment() {
 
     private fun onSend(){
 
+
+
         val name = binding.petNameInput.text.toString()
 
-        //Get the selected pet text
-        val petType = when (binding.messageGroup.checkedRadioButtonId) {
-            R.id.cat_button -> getString(R.string.cat)
-            R.id.dog_button -> getString(R.string.dog)
-            else -> getString(R.string.undefined)
-        }
+        if(name == ""){
+            val text = "Name cannot be empy!"
+            val duration = Toast.LENGTH_SHORT
 
-        val action =
-            FirstFragmentDirections.actionFirstFragmentToSecondFragment(
-                Pet(name, petType)
-            )
-        navController.navigate(action)
+            val toast = Toast.makeText(context, text, duration)
+            toast.show()
+        }
+        else{
+
+            //Get the selected pet text
+            val petType = when (binding.messageGroup.checkedRadioButtonId) {
+                R.id.cat_button -> getString(R.string.cat)
+                R.id.dog_button -> getString(R.string.dog)
+                else -> getString(R.string.undefined)
+            }
+
+            val action =
+                FirstFragmentDirections.actionFirstFragmentToSecondFragment(
+                    Pet(name, petType)
+                )
+            navController.navigate(action)
+        }
     }
 }
